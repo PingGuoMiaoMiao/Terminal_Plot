@@ -1,5 +1,7 @@
 ///| 函数采样模块
-///| 函数采样 - 计算函数在指定范围内的值
+
+///|
+/// 函数采样 - 计算函数在指定范围内的值
 pub fn sample_function(
   func : FunctionType,
   x_min : Double,
@@ -32,4 +34,3 @@ pub fn sample_function(
   }
   points
 }
-

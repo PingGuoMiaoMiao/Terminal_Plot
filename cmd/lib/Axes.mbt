@@ -1,7 +1,7 @@
 ///| 坐标轴绘制模块
 
-
-///| 绘制坐标轴（带刻度）
+///|
+/// 绘制坐标轴（带刻度）
 pub fn draw_axes(canvas : Canvas, config : PlotConfig) -> Canvas {
   // 创建新的数据数组
   let new_data = Array::make(canvas.height, Array::make(canvas.width, " "))
@@ -95,4 +95,3 @@ pub fn draw_axes(canvas : Canvas, config : PlotConfig) -> Canvas {
   }
   Canvas::{ width: canvas.width, height: canvas.height, data: new_data }
 }
-

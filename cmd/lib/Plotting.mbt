@@ -1,6 +1,7 @@
 ///| 绘图功能模块
 
-///| 绘制单条曲线
+///|
+/// 绘制单条曲线
 pub fn plot_single_function(func : FunctionType, config : PlotConfig) -> Unit {
   // 创建画布
   let canvas = init_canvas(config.width, config.height)
@@ -147,7 +148,8 @@ pub fn plot_single_function(func : FunctionType, config : PlotConfig) -> Unit {
   print_canvas(canvas)
 }
 
-///| 绘制多条曲线
+///|
+/// 绘制多条曲线
 pub fn plot_multiple_functions(
   funcs : Array[FunctionType],
   symbols : Array[String],
@@ -207,7 +209,8 @@ pub fn plot_multiple_functions(
   print_canvas(result)
 }
 
-///| 绘制数据序列（数组输入）
+///|
+/// 绘制数据序列（数组输入）
 pub fn plot_data_series(
   data : Array[(Double, Double)],
   config : PlotConfig,
@@ -270,7 +273,8 @@ pub fn plot_data_series(
   print_canvas(result)
 }
 
-///| 便捷函数 - 绘制正弦函数
+///|
+/// 便捷函数 - 绘制正弦函数
 pub fn plot_sin(
   x_min : Double,
   x_max : Double,
@@ -290,7 +294,8 @@ pub fn plot_sin(
   plot_single_function(Sin, config)
 }
 
-///| 便捷函数 - 绘制余弦函数
+///|
+/// 便捷函数 - 绘制余弦函数
 pub fn plot_cos(
   x_min : Double,
   x_max : Double,
@@ -310,7 +315,8 @@ pub fn plot_cos(
   plot_single_function(Cos, config)
 }
 
-///| 便捷函数 - 绘制正切函数
+///|
+/// 便捷函数 - 绘制正切函数
 pub fn plot_tan(
   x_min : Double,
   x_max : Double,
@@ -330,7 +336,8 @@ pub fn plot_tan(
   plot_single_function(Tan, config)
 }
 
-///| 便捷函数 - 绘制反正切函数
+///|
+/// 便捷函数 - 绘制反正切函数
 pub fn plot_arctan(
   x_min : Double,
   x_max : Double,
@@ -350,7 +357,8 @@ pub fn plot_arctan(
   plot_single_function(ArcTan, config)
 }
 
-///| 便捷函数 - 绘制平方函数
+///|
+/// 便捷函数 - 绘制平方函数
 pub fn plot_square(
   x_min : Double,
   x_max : Double,
@@ -370,7 +378,8 @@ pub fn plot_square(
   plot_single_function(Square, config)
 }
 
-///| 便捷函数 - 绘制线性函数
+///|
+/// 便捷函数 - 绘制线性函数
 pub fn plot_line(
   x_min : Double,
   x_max : Double,
@@ -389,4 +398,3 @@ pub fn plot_line(
   }
   plot_single_function(Linear, config)
 }
-

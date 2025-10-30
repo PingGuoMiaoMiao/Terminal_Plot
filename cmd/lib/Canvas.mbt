@@ -1,5 +1,7 @@
 ///| 画布管理模块
-///| 初始化画布
+
+///|
+/// 初始化画布
 pub fn init_canvas(width : Int, height : Int) -> Canvas {
   // 创建画布数据 - 为每一行创建独立的数组
   let rows = Array::make(height, Array::make(0, ""))
@@ -9,7 +11,8 @@ pub fn init_canvas(width : Int, height : Int) -> Canvas {
   Canvas::{ width, height, data: rows }
 }
 
-///| 在画布上绘制一个点
+///|
+/// 在画布上绘制一个点
 pub fn plot_point(
   canvas : Canvas,
   row : Int,
@@ -35,7 +38,8 @@ pub fn plot_point(
   }
 }
 
-///| 输出画布到终端
+///|
+/// 输出画布到终端
 pub fn print_canvas(canvas : Canvas) -> Unit {
   for i = 0; i < canvas.height; i = i + 1 {
     let line = canvas.data[i].join("")
@@ -43,7 +47,8 @@ pub fn print_canvas(canvas : Canvas) -> Unit {
   }
 }
 
-///| 将画布转换为字符串
+///|
+/// 将画布转换为字符串
 pub fn canvas_to_string(canvas : Canvas) -> String {
   let mut result = ""
   for i = 0; i < canvas.height; i = i + 1 {
@@ -55,4 +60,3 @@ pub fn canvas_to_string(canvas : Canvas) -> String {
   }
   result
 }
-

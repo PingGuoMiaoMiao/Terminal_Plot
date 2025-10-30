@@ -1,6 +1,7 @@
 ///| 坐标转换模块
 
-///| 坐标归一化 - 将数学坐标映射到画布坐标
+///|
+/// 坐标归一化 - 将数学坐标映射到画布坐标
 pub fn normalize_coordinates(
   points : Array[(Double, Double)],
   config : PlotConfig,
@@ -42,7 +43,8 @@ pub fn normalize_coordinates(
   normalized
 }
 
-///| 自动计算 y 范围
+///|
+/// 自动计算 y 范围
 pub fn auto_y_range(points : Array[(Double, Double)]) -> (Double, Double) {
   if points.length() == 0 {
     (-1.0, 1.0)
@@ -69,4 +71,3 @@ pub fn auto_y_range(points : Array[(Double, Double)]) -> (Double, Double) {
     (y_min - margin, y_max + margin)
   }
 }
-

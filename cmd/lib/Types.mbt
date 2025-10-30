@@ -1,13 +1,15 @@
 ///| 类型定义模块
 
-///| 画布结构定义
+///|
+/// 画布结构定义
 pub(all) struct Canvas {
   width : Int
   height : Int
   data : Array[Array[String]]
 }
 
-///| 函数类型定义
+///|
+/// 函数类型定义
 pub enum FunctionType {
   Sin
   Cos
@@ -17,7 +19,8 @@ pub enum FunctionType {
   Linear
 }
 
-///| 绘图配置
+///|
+/// 绘图配置
 pub(all) struct PlotConfig {
   x_min : Double
   x_max : Double
@@ -28,4 +31,3 @@ pub(all) struct PlotConfig {
   show_axes : Bool
   symbol : String
 }
-
