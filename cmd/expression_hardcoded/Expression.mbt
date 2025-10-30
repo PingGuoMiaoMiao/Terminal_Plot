@@ -191,8 +191,8 @@ pub fn evaluate_expression(expr : String, x : Double) -> Option[Double] {
 pub fn plot_circle(x_min : Double, x_max : Double, width : Int, height : Int) -> Unit {
   let y_min = -1.5
   let y_max = 1.5
-  
-  let canvas = init_canvas(width, height)
+
+  let canvas = @lib.init_canvas(width, height)
   let canvas_data = canvas.data
   
   let sample_count = width * 3
@@ -266,8 +266,8 @@ pub fn plot_circle(x_min : Double, x_max : Double, width : Int, height : Int) ->
   }
   
   // 输出
-  let canvas_final = Canvas::{ width: width, height: height, data: canvas_data }
-  print_canvas(canvas_final)
+  let canvas_final = @lib.Canvas::{ width: width, height: height, data: canvas_data }
+  @lib.print_canvas(canvas_final)
 }
 
 ///| 去除字符串中的所有空格
@@ -340,7 +340,7 @@ pub fn plot_expression(expr : String, x_min : Double, x_max : Double, width : In
   let y_max_final = y_max + margin
   
   // 绘制函数
-  let canvas = init_canvas(width, height)
+  let canvas = @lib.init_canvas(width, height)
   let canvas_data = canvas.data
   
   let sample_count = width * 3
@@ -417,8 +417,8 @@ pub fn plot_expression(expr : String, x_min : Double, x_max : Double, width : In
   }
   
   // 输出
-  let canvas_final = Canvas::{ width: width, height: height, data: canvas_data }
-  print_canvas(canvas_final)
+  let canvas_final = @lib.Canvas::{ width: width, height: height, data: canvas_data }
+  @lib.print_canvas(canvas_final)
 }
 
 ///| 简单的字符串到 Double 解析（仅支持基本格式）

@@ -1,1 +1,12 @@
-{}
+{
+    "import": [
+       {
+      "path": "username/Terminal_Plot/cmd/lib",
+      "alias": "lib"
+    },
+    {
+      "path": "username/Terminal_Plot/cmd/expression_parser",
+      "alias": "parser"
+    }
+  ]
+}

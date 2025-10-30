@@ -1,10 +1,5 @@
 ///| 解析器测试文件
 
-///| 主函数
-fn main {
-  demo_parser()
-}
-
 ///| 演示解析器功能
 fn demo_parser() -> Unit {
   @prelude.println("=== 通用解析器演示 ===")
